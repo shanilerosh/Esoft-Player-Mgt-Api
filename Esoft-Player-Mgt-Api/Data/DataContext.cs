@@ -9,10 +9,13 @@ namespace Esoft_Player_Mgt_Api.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
 
-        public DbSet<Temp> Temps { get; set; }
+       
 
 
         public DbSet<Esoft_Player_Mgt_Api.Entity.Player> Player { get; set; }
+
+
+        public DbSet<Esoft_Player_Mgt_Api.Entity.Team> Team { get; set; }
 
     }
 }
